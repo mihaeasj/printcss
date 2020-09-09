@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Make a print</title>
+<style type="text/css">
+@media screen{
+	body {
+		margin: 3em auto 3em auto;
+		max-width:50em;
+		min-width: 30em;
+		color:#636363;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 1em;
+		line-height: 1;
+		}
+	a {
+		color:darkorange;
+	}
+}
+	
+@media print{
+	body {
+		color:#000;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+		font-size:12pt;
+		line-height: 16pt;
+	}
+	a {
+		color:#000;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	a::after{
+    content: " (" attr(href) ") ";
+}
+</style>
+</head>
+
+<body>
+	<h1>Kan det printes?</h1>
+<p>N&aring;r man printer skal ens side jo helst ikke se ud som om det er en hjemmeside der har tabt str&oslash;mmen, men gerne som noget der er t&aelig;nkt l&aelig;st fra papir</p>
+<p>Bogstaver skal gerne v&aelig;re lette at l&aelig;se og det er ikke altid tilf&aelig;ldet med alle skrifte. Nogle skrifter er lavet til sk&aelig;rmmedier, og er derfor sv&aelig;rere at l&aelig;se p&aring; papir</p>
+	<p>Links er ogs&aring; lidt irriterende p&aring; papir - for hvor skal <a href="Hele URI p&aring; den side, der linkes til">linket</a> v&aelig;re?</p>
+</body>
+</html>
